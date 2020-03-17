@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en"><head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="trello.css">
+    <title>Trello</title>
+</head>
+
+<body>
+ 
+    <nav class="navbar navbar-dark rounded" style="background-color:rgba(33, 10, 63, 0.828)" >
+        <span class="navbar-brand">
+          <h1>Mis actividades</h1>
+        </span>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          Ingrese su tarea
+        </button>
+    
+      </nav>
+
+    <div class="container-fluid">
+        <div class="row  row-cols-4 ">
+            <div class="col" id="ulTareas" ondrop="drop(event)" ondragover="allowDrop(event)" >
+                <h3>TO DO</h3>
+
+                
+            </div>
+            <div class="col-4" id="ulDoing" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h3>DOING</h3>
+
+
+            </div>
+
+            <div class="col-4" id="ulDone" ondrop="drop(event)" ondragover="allowDrop(event)" >
+                <h3>DONE</h3>
+
+
+               
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Agregar actividad</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Titulo</label>
+                            <input type="text" class="form-control" id="inputTitulo" placeholder="Ingrese titulo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Fecha</label>
+                            <input type="date" class="form-control" id="inputFecha" placeholder="DD/MM/AA" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Descripcion</label>
+                            <input type="text" class="form-control" id="inputDescripcion" placeholder="Ingrese descripcion" required>
+                        </div>
+
+
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary ml-5" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="crearTarjeta"
+                        onclick="agregarTarea()">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+   
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="trello.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

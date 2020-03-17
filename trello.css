@@ -1,0 +1,94 @@
+html, body{
+  height: 100%;
+  background:linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3));
+  background-size:cover;
+}
+
+h1 {
+    text-align: center;
+    color: whitesmoke;
+}
+
+h3 {
+    text-align: center;
+}
+
+/*Style the list items */
+li{
+  list-style: none;
+
+
+}
+ul li {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+
+#ulTareas{
+  background-color: rgba(127, 119, 236, 0.5);
+    min-height: 33rem !important;
+    border-radius: 15px 50px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    max-width: 30rem;
+    -webkit-box-shadow: -7px 10px 7px -7px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: -7px 10px 7px -7px rgba(0, 0, 0, 0.2);
+    box-shadow: -7px 10px 7px -7px rgba(0, 0, 0, 0.2);
+}
+
+#ulDoing{
+  background-color: rgba(127, 119, 236, 0.5);
+    min-height: 33rem !important;
+    border-radius: 15px 50px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    max-width: 30rem;
+    -webkit-box-shadow: -7px 10px 7px -7px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: -7px 10px 7px -7px rgba(0, 0, 0, 0.2);
+    box-shadow: -7px 10px 7px -7px rgba(0, 0, 0, 0.2);
+}
+
+#ulDone{
+  background-color: rgba(127, 119, 236, 0.5);
+    min-height: 33rem !important;
+    border-radius: 15px 50px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    max-width: 30rem;
+    -webkit-box-shadow: -7px 10px 7px -7px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: -7px 10px 7px -7px rgba(0, 0, 0, 0.2);
+    box-shadow: -7px 10px 7px -7px rgba(0, 0, 0, 0.2);
+}
+
+.card{
+  border-radius: 15px 50px;
+}
